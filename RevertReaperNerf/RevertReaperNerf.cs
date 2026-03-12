@@ -10,7 +10,7 @@ public class RevertReaperNerf : BaseUnityPlugin
     public const string PluginGUID = "AetharNet.Mods.ZumbiBlocks2.RevertReaperNerf";
     public const string PluginAuthor = "wowi";
     public const string PluginName = "RevertReaperNerf";
-    public const string PluginVersion = "0.1.0";
+    public const string PluginVersion = "0.1.1";
 
     internal new static ManualLogSource Logger;
 
