@@ -9,7 +9,7 @@ namespace AetharNet.Mods.ZumbiBlocks2.RevertReaperNerf.Patches;
 public static class PhysicalGunPatch
 {
     [HarmonyTranspiler]
-    [HarmonyPatch(nameof(PhysicalGun.SetShotDamage))]
+    [HarmonyPatch(nameof(PhysicalGun.SetupShotDamage))]
     public static IEnumerable<CodeInstruction> RevertStaggerChance(IEnumerable<CodeInstruction> instructions)
     {
         var playerDamageConstructor = AccessTools.Constructor(typeof(PlayerDamage), [typeof(Vector3), typeof(float), typeof(bool), typeof(float)]);
